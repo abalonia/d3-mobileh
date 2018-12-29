@@ -450,7 +450,7 @@ var width = 1000;
 var height = 500;
 var maxLabel = 150;
 var duration = 500;
-var radius = 3;
+var radius = 6;
 
 var i = 0;
 var root;
