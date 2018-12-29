@@ -447,7 +447,7 @@ var json = {
 };
 
 var width = 1000;
-var height = 650;
+var height = 500;
 var maxLabel = 150;
 var duration = 500;
 var radius = 3;
@@ -634,14 +634,14 @@ function click(d) {
 	d._children = d.children;
     d.children = null;
 	if (d.name === ""){
-		//alert("outside");
+		window.parent.postMessage("root", "*");;
 	}
   } else  {
-   // alert("inside");
+    window.parent.postMessage("click", "*");
 	d.children = d._children;
     d._children = null;
   }
-
+	
   update(d);
 }
 
