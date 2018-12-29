@@ -474,7 +474,7 @@ var svg = d3.select("body").append("svg")
    .attr("viewBox", "0 0 " + width + " " + height )
   .attr("preserveAspectRatio", "xMidYMid meet")
   .append("g")
-  .attr("transform", "translate(" + maxLabel + ",0)");
+  .attr("transform", "translate(" + 35 + ",0)");
 
 root = json;
 root.x0 = height / 2;
